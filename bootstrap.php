@@ -10,7 +10,7 @@ use Flarum\Settings\SettingsRepositoryInterface;
 use Flarum\Event\ConfigureLocales;
 
 return function (Dispatcher $events) {
-    $events->subscribe(Spanish);
+    $events->subscribe('Spanish');
 };
 
 class Spanish {
