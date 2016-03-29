@@ -14,9 +14,9 @@ flarum-tags:
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
       color_label: Color
-      description_label: Descripción
       delete_tag_button: Borrar Etiqueta
       delete_tag_confirmation: "¿Está seguro de que quiere eliminar esta etiqueta? Las discusiones de la etiqueta NO serán eliminadas."
+      description_label: Descripción
       hide_label: Ocultar de la portada #TODO: All Discussions
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
@@ -41,7 +41,7 @@ flarum-tags:
       required_primary_heading: Número de etiquetas principales requeridas
       required_primary_text: Introduzca el numero mínimo y máximo de etiquetas principales que pueden ser aplicadas a una discusión.
       required_secondary_heading: Número de etiquetas secundarias requeridas
-      required_secondary_text: Introduzca el numero mínimo y máximo de etiquetas secundarias que pueden ser aplicadas a una discusión.
+      required_secondary_text: Introduzca el número mínimo y máximo de etiquetas secundarias que pueden ser aplicadas a una discusión.
       title: Configuración de Etiquetas
 
     # These translations are used in the Tags page.

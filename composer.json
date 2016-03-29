@@ -1,5 +1,5 @@
 {
-    "name": "flarumes/spanish",
+    "name": "flarumes/flarum-ext-spanish",
     "type": "flarum-extension",
     "description": "Spanish language pack.",
     "keywords": ["locale"],
@@ -14,7 +14,13 @@
         "issues": "https://github.com/FlarumES/Spanish/issues",
         "source": "https://github.com/FlarumES/Spanish/flags"
     },
+    "require": {
+        "flarum/core": "^0.1.0-beta.5"
+    },
     "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
         "flarum-extension": {
             "title": "Spanish",
             "icon": {

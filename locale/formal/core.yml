@@ -7,6 +7,12 @@ core:
   # Translations in this namespace are used by the admin interface.
   admin:
 
+    # These translations are used in the placeholder Add Extension modal dialog.
+    add_extension:
+      developer_text: "Si usted es un desarrollador, puede <a>leer la documentación</a> y probar a crear sus propias extensiones."
+      install_text: "Mientras tanto, puede encontrar extensiones en <a>Flarum.org</a> e instalarlas manualemente mediante Composer."
+      temporary_text: "Un día, en un futuro no muy distante, este diálogo le permitirá añadir una extensión a su foro con facilidad. ¡Estamos creando la plataforma en este momento!"
+
     # These translations are used in the Appearance page.
     appearance:
       colored_header_label: Cabecera coloreada
@@ -133,7 +139,9 @@ core:
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
+      confirm_password_label: Confirmar contraseña
       dismiss_button: => core.ref.okay
+      incorrect_password_message: La contraseña introducida es incorrecta.
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
@@ -172,12 +180,6 @@ core:
       submit_button: Publicar respuesta
       view_button: Ver
 
-    # These translations are used in the Confirm Password modal dialog.
-    confirm_password:
-      password_placeholder: => core.ref.password
-      submit_button: => core.ref.confirm_password
-      title: => core.ref.confirm_password
-
     # These translations are used by the discussion control buttons.
     discussion_controls:
       cannot_reply_button: No puede responder
@@ -211,6 +213,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: "Le hemos enviado un correo electrónico que contiene un enlace para restablecer su contraseña. Si no aparece pronto, por favor, compruebe la carpeta de correo no deseado (spam)."
+      not_found_message: No hay ningún usuario registrado con esa dirección de correo electrónico.
       submit_button: Restablecer contraseña
       text: Introduzca su correo electrónico y le enviaremos un enlace para restablecer su contraseña.
       title: ¿Olvidó su contraseña?
@@ -229,6 +232,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: No puede crear una discusión #TODO: Empezar vs Crear
+      mark_all_as_read_confirmation: "¿Está seguro de que desea marcar todas las discusiones como leídas?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Cargar de nuevo
       start_discussion_button: => core.ref.start_a_discussion
@@ -243,7 +247,6 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      confirmation_required_message: "Debe confirmar su correo electrónico antes de poder conectarse. Le hemos enviado un correo electrónico de confirmación a {email}. Si no aparece pronto, por favor, compruebe la carpeta de correo no deseado (spam)."
       forgot_password_link: "¿Olvidó su contraseña?"
       invalid_login_message: Sus credenciales son incorrectas.
       password_placeholder: => core.ref.password
@@ -307,7 +310,6 @@ core:
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
-      confirmation_message: => core.ref.confirmation_email_sent
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
       log_in_text: "¿Ya tiene una cuenta? <a>¡Conéctese!</a>"
@@ -337,6 +339,12 @@ core:
       delete_confirmation: "¿Está seguro de que quiere eliminar este usuario? Las publicaciones del usuario serán eliminadas."
       edit_button: => core.ref.edit
 
+    # These translations are used in the alert that is shown when a new user has not confirmed their email address.
+    user_email_confirmation:
+      alert_message: => core.ref.confirmation_email_sent
+      resend_button: Re-enviar correo electrónico de confirmación
+      sent_message: Enviado
+
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
@@ -363,8 +371,8 @@ core:
     # These translations are used to punctuate a series of items.
     series:
       glue_text: ", "
-      two_text: "{first} y {second}"
       three_text: "{first}, {second} y {third}"
+      two_text: "{first} y {second}"
 
   # Translations in this namespace are used in basic HTML interface.
   basic:
@@ -437,7 +445,6 @@ core:
     all_discussions: Discusiones
     change_email: Cambiar el correo electrónico
     change_password: Cambiar la contraseña
-    confirm_password: Confirmar la contraseña
     confirmation_email_sent: "Le hemos enviado un correo electrónico de confirmación a {email}. Si no aparece pronto, por favor, compruebe la carpeta de correo no deseado (spam)."
     delete: Eliminar
     delete_forever: Eliminar para siempre
