@@ -37,12 +37,13 @@ flarum-flags:
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
       empty_text: No hay marcas
+      item_text: "{username} en <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_tooltip: Eliminar marca
+      dismiss_flag_button: Eliminar marca
       flagged_by_text: "{username} marcó"
       flagged_by_with_reason_text: "{username} marcó como {reason}"
 
