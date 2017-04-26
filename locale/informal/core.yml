@@ -1,3 +1,13 @@
+#
+# This file is part of FlarumES/Spanish.
+# -----------------------------------------------------------------------
+# Copyright © 2015-2017 Toby Zerner and Flarum
+# Copyright © 2015-2017 Johann Rodríguez and Flarum en Español
+# -----------------------------------------------------------------------
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+#
+
 core:
 
   ##
@@ -12,6 +22,7 @@ core:
       developer_text: "Si tú eres un desarrollador, puedes <a>leer la documentación</a> y probar a crear tus propias extensiones."
       install_text: "Mientras tanto, puedes encontrar extensiones en <a>Flarum.org</a> e instalarlas manualemente mediante Composer."
       temporary_text: "Un día, en un futuro no muy distante, este diálogo te permitirá añadir una extensión a tu foro con facilidad. ¡Estamos creando la plataforma en este momento!"
+      title: Añadir una extensión
 
     # These translations are used in the Appearance page.
     appearance:
@@ -223,8 +234,7 @@ core:
       delete_confirmation: "¿Está seguro de que desea eliminar esta discusión?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: Responder
-      rename_button: Cambiar el título
-      rename_text: "Introduzca un nuevo título para esta discusión:"
+      rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
@@ -238,10 +248,16 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
+      activate_button: Activar usuario
+      email_heading: => core.ref.email
       email_label: => core.ref.email
+      groups_heading: Grupos
+      password_heading: => core.ref.password
       password_label: => core.ref.password
+      set_password_label: Establecer nueva contraseña
       submit_button: => core.ref.save_changes
       title: Editar usuario
+      username_heading: => core.ref.username
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -286,6 +302,7 @@ core:
       forgot_password_link: "¿Olvidaste tu contraseña?"
       invalid_login_message: Tus credenciales son incorrectas.
       password_placeholder: => core.ref.password
+      remember_me_label: Recordarte durante dos semanas
       sign_up_text: "¿Aún no tienes una cuenta? <a>¡Regístrate!</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -326,6 +343,11 @@ core:
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} más tarde"
+
+    # These translations are used by the rename discussion modal.
+    rename_discussion:
+      title: Introduce un nuevo título para esta discusión
+      submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
     search:
@@ -439,6 +461,10 @@ core:
       submit_button: Restablecer la contraseña
       title: => core.ref.reset_your_password
 
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "El nombre de usuario sólo puede contener letras, números y guiones."
+
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
@@ -517,6 +543,7 @@ core:
     notifications: Notificaciones
     okay: Aceptar
     password: Contraseña
+    rename: Renombrar
     reply: Responder                                # Referenced by flarum-mentions.yml
     reset_your_password: Restablece tu contraseña
     restore: Restaurar

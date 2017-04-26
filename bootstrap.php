@@ -1,8 +1,13 @@
 <?php
-// Copyright © 2015 Toby Zerner and Flarum
-// Copyright © 2015 Johann Rodríguez and Flarum en Español
-// ---
-// All rights reserved
+/*
+ * This file is part of FlarumES/Spanish.
+ * -----------------------------------------------------------------------
+ * Copyright © 2015-2017 Toby Zerner and Flarum
+ * Copyright © 2015-2017 Johann Rodríguez and Flarum en Español
+ * -----------------------------------------------------------------------
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 use Flarum\Event\ConfigureClientView;
 use Illuminate\Contracts\Events\Dispatcher;
