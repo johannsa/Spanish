@@ -54,8 +54,8 @@ flarum-flags:
     # These translations are used by the frame displayed around flagged posts.
     post:
       dismiss_flag_button: Eliminar marca
-      flagged_by_text: "{username} marcó"
-      flagged_by_with_reason_text: "{username} marcó como {reason}"
+      flagged_by_text: "Marcado por {username}"
+      flagged_by_with_reason_text: "Marcado por {username} como {reason}"
 
     # These translations are used by the post control buttons.
     post_controls:
