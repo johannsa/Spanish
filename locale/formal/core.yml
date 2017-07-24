@@ -53,6 +53,7 @@ core:
       home_page_heading: Página de inicio
       home_page_text: "Elija cuál es la portada que los usuarios verán al llegar al foro." #TODO: Custom
       saved_message: Sus cambios fueron guardados.
+      show_language_selector_label: Mostrar el selector de idioma
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Mensaje de bienvenida
       welcome_banner_text: Introduzca el texto que se mostrará en la lista de discusiones. Utilícelo para dar la bienvenida a los invitados en su foro.
@@ -158,6 +159,7 @@ core:
       start_discussions_label: Crear discusiones
       view_discussions_label: Ver discusiones
       view_post_ips_label: Ver direcciones IP de las publicaciones
+      view_user_list_label: Ver la lista de usuarios
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -273,6 +275,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: Administración
+      back_to_index_tooltip: Volver a la lista de discusiones
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Perfil
@@ -302,7 +305,7 @@ core:
       forgot_password_link: "¿Olvidó su contraseña?"
       invalid_login_message: Sus credenciales son incorrectas.
       password_placeholder: => core.ref.password
-      remember_me_label: Recordarle durante dos semanas
+      remember_me_label: Recordarle
       sign_up_text: "¿Aún no tiene una cuenta? <a>¡Regístrese!</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -346,7 +349,7 @@ core:
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
-      title: Introduzca un nuevo título para esta discusión
+      title: Cambiar el título de esta discusión
       submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
